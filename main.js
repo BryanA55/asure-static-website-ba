@@ -44,7 +44,7 @@ function createDice(num) {
 
         dot.classList.add("dice-dots");
         dot.style.setProperty("--top", dotPosition[0] + "%");
-        dot.style.setProperty("--left", dotPosition[0] + "%");
+        dot.style.setProperty("--left", dotPosition[1] + "%");
         dice.appendChild(dot);
     }
 
