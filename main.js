@@ -29,10 +29,10 @@ function createDice(num) {
         ],
         6: [
             [20,20],
-            [50,20],
-            [80,20],
             [20,80],
+            [50,20],
             [50,80],
+            [80,20],
             [80,80]
         ]
     };
@@ -51,7 +51,20 @@ function createDice(num) {
     return dice;
 
 }
+
+function randomDice(diceContainer, numberOfDice) {
+    diceContainer.innerHTML = "";
+
+    for (let i =0; i < numberOfDice; i++) {
+        const random = Math.floor((Math.random() * 6) + 1);
+        const dice = createDice(random);
+
+        diceContainer.appendChild(dice);
+    }
+}
+
+
 const diceContainer = document.querySelector(".dice-container");
 const btnRollDice = document.querySelector(".btn-roll-dice");
 
-diceContainer.appendChild(createDice(6));
+randomDice(diceContainer, 5);
