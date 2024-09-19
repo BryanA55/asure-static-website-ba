@@ -7,6 +7,24 @@ body {
     height: 100vh;
     margin: 0;
 }
+.banner {
+    width: 100%;
+    height: 33vh;
+    overflow: hidden;
+}
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
 .dice-container {
     /* Container for dice */
     display: flex;
