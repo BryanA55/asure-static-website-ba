@@ -70,6 +70,12 @@ const btnRollDice = document.querySelector(".btn-roll-dice");
 btnRollDice.addEventListener("click", () => {
     randomDice(diceContainer, numOfDice);
 });
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        randomDice(diceContainer, numOfDice);
+    }
+});
+
 /* Auto roll dice when webpage is loaded */
 window.onload = function() {
     randomDice(diceContainer,numOfDice);
