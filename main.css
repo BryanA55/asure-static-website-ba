@@ -1,7 +1,9 @@
 .dice-container {
+    /* Container for dice */
     display: flex;
 }
 .dice {
+    /* Make dice square */
     width: 80px;
     height: 80px;
     position: relative;
@@ -10,10 +12,21 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 .dice-dots {
+    /* Correctly position more than one dot */
+    --top: 0%;
+    --left: 0%;
+
+    /* Make dot sizes and colorr */
     width: 15px;
     height: 15px;
     background-color: #000000;
     border-radius: 50%;
+    /* Position the dice dots */
+    /* Makes sure they are centered */
+    position: absolute;
+    top: var(--top);
+    left: var(--left);
+    transform: translateX(calc(var(--left) *-1)) translateY(calc(var(--top) *-1)); /* Correctly center dice dots */
 }
 .btn-roll-dice {
     margin-top: 10px;
