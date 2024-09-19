@@ -69,6 +69,6 @@ const btnRollDice = document.querySelector(".btn-roll-dice");
 
 randomDice(diceContainer, numOfDice);
 
-btnRollDice.addEventListener("Click", ) => {
+btnRollDice.addEventListener("click", () => {
     randomDice(diceContainer, 5);
-}
+});
