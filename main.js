@@ -73,4 +73,4 @@ btnRollDice.addEventListener("click", () => {
 /* Auto roll dice when webpage is loaded */
 window.onload = function() {
     randomDice(diceContainer,numOfDice);
-}
+};
