@@ -1,6 +1,16 @@
+body {
+    /* Center the dice and button */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
 .dice-container {
     /* Container for dice */
     display: flex;
+    gap: 10px;
 }
 .dice {
     /* Make dice square */
@@ -29,5 +39,5 @@
     transform: translateX(calc(var(--left) *-1)) translateY(calc(var(--top) *-1)); /* Correctly center dice dots */
 }
 .btn-roll-dice {
-    margin-top: 10px;
+    margin-top: 20px;
 }
