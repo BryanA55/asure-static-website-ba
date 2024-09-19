@@ -1,7 +1,7 @@
 .dice-container {
     display: flex;
 }
-.dice{
+.dice {
     width: 80px;
     height: 80px;
     position: relative;
@@ -9,7 +9,7 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
-.dice-dots{
+.dice-dots {
     width: 15px;
     height: 15px;
     background-color: #0000;
