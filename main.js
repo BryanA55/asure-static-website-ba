@@ -39,7 +39,7 @@ function createDice(num) {
     const dice = document.createElement("div");
     dice.classList.add("dice");
 
-    for (const dotPostion of dotPositions(num)) {
+    for (const dotPosition of dotPositions(num)) {
         const dot = document.createElement("div");
 
         dot.classList.add("dice-dots");
