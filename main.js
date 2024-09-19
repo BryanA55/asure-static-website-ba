@@ -39,19 +39,19 @@ function createDice(num) {
     const dice = document.createElement("div");
     dice.classList.add("dice");
 
-    for (const dotPosition of dotPositions(num)) {
+    for (const dotPosition of dotPositions[num]) {
         const dot = document.createElement("div");
 
         dot.classList.add("dice-dots");
         dot.style.setProperty("--top", dotPosition[0] + "%");
         dot.style.setProperty("--left", dotPosition[0] + "%");
-        dice.appendChile(dot);
+        dice.appendChild(dot);
     }
 
     return dice;
 
 }
 const diceContainer = document.querySelector(".dice-container");
-const btnRollDice = document.querySelecter(".btn-roll-dice");
+const btnRollDice = document.querySelector(".btn-roll-dice");
 
 diceContainer.appendChild(createDice(6));
