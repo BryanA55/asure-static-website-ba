@@ -43,7 +43,7 @@ function createDice(num) {
         const dot = document.createElement("div");
 
         dot.classList.add("dice-dots");
-        dot.style.setProperty("--top", dotPoosition[0] + "%");
+        dot.style.setProperty("--top", dotPosition[0] + "%");
         dot.style.setProperty("--left", dotPosition[0] + "%");
         dice.appendChile(dot);
     }
