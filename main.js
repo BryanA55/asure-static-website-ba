@@ -39,6 +39,7 @@ function createDice(num) {
     const dice = document.createElement("div");
     dice.classList.add("dice");
 
+    /* Places dice dots in the correct spots */
     for (const dotPosition of dotPositions[num]) {
         const dot = document.createElement("div");
 
@@ -52,6 +53,7 @@ function createDice(num) {
 
 }
 
+/* Randomizes the dice numbers */
 function randomDice(diceContainer, numberOfDice) {
     diceContainer.innerHTML = "";
 
@@ -62,7 +64,7 @@ function randomDice(diceContainer, numberOfDice) {
         diceContainer.appendChild(dice);
     }
 }
-
+/* Necessary variables */
 const numOfDice = 5;
 const diceContainer = document.querySelector(".dice-container");
 const btnRollDice = document.querySelector(".btn-roll-dice");
@@ -70,7 +72,7 @@ const btnRollDice = document.querySelector(".btn-roll-dice");
 btnRollDice.addEventListener("click", () => {
     randomDice(diceContainer, numOfDice);
 });
-document.addEventListener("keydown", (event) => {
+document.addEventListener("keydown", (event) => { /* Enter key rolls dice */
     if (event.key === "Enter") {
         randomDice(diceContainer, numOfDice);
     }
